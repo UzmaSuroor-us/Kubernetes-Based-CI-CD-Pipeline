@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "usuroor/my-app:latest"
+        DOCKER_IMAGE = "usuroor/my-app:latest ."
         KUBE_NAMESPACE = "my-app"
         HELM_CHART_PATH = "./helm/my-app/Chart.yaml"
     }
